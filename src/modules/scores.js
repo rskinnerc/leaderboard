@@ -2,6 +2,8 @@ let scores = [];
 
 const setScores = (result) => {
   scores = result;
-}
+};
 
-export { scores, setScores };
+const getScores = () => scores;
+
+export { getScores, setScores };
