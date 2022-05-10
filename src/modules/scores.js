@@ -21,4 +21,6 @@ const scores = [
   },
 ];
 
-export default scores;
+const setScores = (scores) => scores = scores;
+
+export { scores, setScores };
