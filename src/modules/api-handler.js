@@ -26,4 +26,15 @@ const fetchScores = async () => {
   });
 };
 
-export { createNewGame, fetchScores }
+const addScore = async (newScore) => {
+  const res = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(newScore)
+  })
+
+}
+
+export { createNewGame, fetchScores, addScore }

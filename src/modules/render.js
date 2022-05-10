@@ -2,7 +2,7 @@ const createScoreNode = (score) => {
   const scoreNode = document.createElement('li');
 
   scoreNode.innerHTML = `
-    <li data-score-id="${score.id}" class="score-item">${score.name}: ${score.score}</li>
+    <li data-score-id="${score.id}" class="score-item">${score.user}: ${score.score}</li>
   `;
 
   return scoreNode;
