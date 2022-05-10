@@ -26,6 +26,7 @@ section button {
   padding: 4px 8px;
   font-weight: 700;
   box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
 }
 
 section.scores-section ul {
@@ -62,7 +63,6 @@ section.scores-form-section input {
   outline: none;
   border-radius: 3px;
 }
-
 
 @media screen and (min-width: 768px) {
   header,
