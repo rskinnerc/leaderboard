@@ -2,6 +2,11 @@ import './reset.css';
 import './style.css';
 import { addScore, createNewGame, fetchScores } from './modules/api-handler';
 
+const refreshBtn = document.getElementById('refresh-scores');
+refreshBtn.addEventListener('click', async () => {
+  await fetchScores();
+});
+
 const init = async () => {
   const form = document.forms['add-score'];
 
