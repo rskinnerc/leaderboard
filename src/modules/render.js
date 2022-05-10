@@ -10,7 +10,7 @@ const createScoreNode = (score) => {
 
 const renderScores = (scores) => {
   const scoresContainer = document.getElementById('scores-container');
-  scoresContainer.innerHTML = '';
+  scoresContainer.innerHTML = scores.length > 0 ? '' : `<li>There are no submitted scores.</li>`;
 
   scores.forEach((score) => {
     scoresContainer.append(createScoreNode(score));

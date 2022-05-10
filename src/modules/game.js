@@ -1,5 +1,5 @@
 let gameId = '';
 
-const setGame = (id) => gameId = id;
+const setGame = (id) => { gameId = id };
 
 export { gameId, setGame }
