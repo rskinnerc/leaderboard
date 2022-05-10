@@ -7,11 +7,7 @@ header h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 3em;
   font-weight: 700;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
+  margin-top: 2em;
 }
 
 section.scores-section h2,
@@ -65,4 +61,23 @@ section.scores-form-section input {
   font-weight: 600;
   outline: none;
   border-radius: 3px;
+}
+
+
+@media screen and (min-width: 768px) {
+  header,
+  main {
+    margin: 20px auto;
+    width: 60%;
+  }
+
+  main {
+    display: flex;
+    gap: 6%;
+    justify-content: stretch;
+  }
+
+  section {
+    flex: 1 1 47%;
+  }
 }
