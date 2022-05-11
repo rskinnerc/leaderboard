@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/rskinnerc/leaderboard#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.1",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
