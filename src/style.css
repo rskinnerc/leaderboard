@@ -999,3 +999,34 @@ select {
 .focus\:ring-sky-600\/50:focus {
   --tw-ring-color: rgb(2 132 199 / 0.5);
 }
+
+@media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+}

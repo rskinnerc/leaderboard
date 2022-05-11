@@ -9,13 +9,13 @@
 </head>
 
 <body class="bg-gradient-to-r from-sky-900 to-zinc-800">
-  <header class="mt-24 mx-3">
+  <header class="mt-24 mx-3 md:w-2/3 md:mx-auto">
     <h1
-      class="text-5xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-sky-200">
+      class="text-5xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-sky-200 md:inline">
       Leaderboard</h1>
   </header>
-  <main class="mx-3 my-10">
-    <section class="scores-section">
+  <main class="mx-3 my-10 md:w-2/3 md:mx-auto md:flex md:gap-10">
+    <section class="scores-section md:basis-1/2">
       <h2 class="text-2xl text-sky-200 font-semibold flex justify-between items-center">Recent scores <button
           type="button"
           class="rounded border-2 border-rose-600 px-2 py-0.5 text-base text-rose-100 bg-rose-600 font-semibold shadow-md shadow-rose-300/20 hover:shadow-rose-200/30"
@@ -24,7 +24,7 @@
         <li class="text-sky-300 text-base px-3 py-2 font-semibold">There are no submitted scores.</li>
       </ul>
     </section>
-    <section class="scores-form-section">
+    <section class="scores-form-section md:basis-1/2">
       <h2 class="text-2xl text-sky-200 font-semibold">Add your score</h2>
       <form name="add-score" class="flex flex-col gap-5 my-5">
         <input type="text" name="name"
