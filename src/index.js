@@ -1,4 +1,3 @@
-import './reset.css';
 import './style.css';
 import { addScore, createNewGame, fetchScores } from './modules/api-handler.js';
 
