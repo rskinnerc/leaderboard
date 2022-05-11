@@ -1,6 +1,6 @@
 const createScoreNode = (score) => {
   const scoreNode = document.createElement('li');
-  scoreNode.classList.add('odd:text-sky-500', 'even:text-sky-200', 'text-lg', 'px-3', 'py-2', 'font-semibold', 'tracking-wider', 'flex', 'justify-between')
+  scoreNode.classList.add('odd:text-sky-500', 'even:text-sky-200', 'text-lg', 'px-3', 'py-2', 'font-semibold', 'tracking-wider', 'flex', 'justify-between');
   scoreNode.innerHTML = `
     ${score.user} <span class="text-rose-100 text-base bg-rose-500 py-0.5 px-2 rounded-lg">${score.score}</span>
   `;
