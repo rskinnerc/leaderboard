@@ -8,24 +8,37 @@
   <title>Leaderboard</title>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 
-<body>
-  <header>
-    <h1>Leaderboard</h1>
+<body class="bg-gradient-to-r from-sky-900 to-zinc-800">
+  <header class="mt-24 mx-3 md:w-2/3 md:mx-auto">
+    <h1
+      class="text-5xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-sky-200 md:inline">
+      Leaderboard</h1>
   </header>
-  <main>
-    <section class="scores-section">
-      <h2>Recent scores <button type="button" id="refresh-scores">Refresh</button></h2>
-      <ul id="scores-container">
-        <li>There are no submitted scores.</li>
+  <main class="mx-3 my-10 md:w-2/3 md:mx-auto md:flex md:gap-10">
+    <section class="scores-section md:basis-1/2">
+      <h2 class="text-2xl text-sky-200 font-semibold flex justify-between items-center">Recent scores <button
+          type="button"
+          class="rounded border-2 border-rose-600 px-2 py-0.5 text-base text-rose-100 bg-rose-600 font-semibold shadow-md shadow-rose-300/20 hover:shadow-rose-200/30"
+          id="refresh-scores">Refresh</button></h2>
+      <ul id="scores-container" class="rounded bg-sky-300/5 my-10">
+        <li class="text-sky-300 text-base px-3 py-2 font-semibold">There are no submitted scores.</li>
       </ul>
     </section>
-    <section class="scores-form-section">
-      <h2>Add your score</h2>
-      <form name="add-score">
-        <input type="text" name="name" id="name" placeholder="Your name" required>
-        <input type="number" name="score" id="score" placeholder="Your score" required>
-        <button type="submit">Submit</button>
+    <section class="scores-form-section md:basis-1/2">
+      <h2 class="text-2xl text-sky-200 font-semibold">Add your score</h2>
+      <form name="add-score" class="flex flex-col gap-5 my-5">
+        <input type="text" name="name"
+          class="text-sky-900 font-semibold rounded-md border-2 border-sky-300 focus:ring-4 focus:ring-sky-600/50 focus:outline-none focus:border-sky-300"
+          id="name" placeholder="Your name">
+        <input type="number" name="score"
+          class="text-sky-900 font-semibold rounded-md border-2 border-sky-300 focus:ring-4 focus:ring-sky-600/50 focus:outline-none focus:border-sky-300"
+          id="score" placeholder="Your score">
+        <button type="submit"
+          class="self-end rounded border-2 border-rose-600 px-2 py-0.5 text-base text-rose-100 bg-rose-600 font-semibold shadow-md shadow-rose-300/20 hover:shadow-rose-200/30">Submit</button>
       </form>
+      <div id="notification" class="text-zinc-50 text-sm py-2 px-3 hidden rounded-md ">
+
+      </div>
     </section>
   </main>
 </body>
