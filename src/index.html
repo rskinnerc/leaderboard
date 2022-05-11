@@ -29,13 +29,16 @@
       <form name="add-score" class="flex flex-col gap-5 my-5">
         <input type="text" name="name"
           class="text-sky-900 font-semibold rounded-md border-2 border-sky-300 focus:ring-4 focus:ring-sky-600/50 focus:outline-none focus:border-sky-300"
-          id="name" placeholder="Your name" required>
+          id="name" placeholder="Your name">
         <input type="number" name="score"
           class="text-sky-900 font-semibold rounded-md border-2 border-sky-300 focus:ring-4 focus:ring-sky-600/50 focus:outline-none focus:border-sky-300"
-          id="score" placeholder="Your score" required>
+          id="score" placeholder="Your score">
         <button type="submit"
           class="self-end rounded border-2 border-rose-600 px-2 py-0.5 text-base text-rose-100 bg-rose-600 font-semibold shadow-md shadow-rose-300/20 hover:shadow-rose-200/30">Submit</button>
       </form>
+      <div id="notification" class="text-zinc-50 text-sm py-2 px-3 hidden rounded-md ">
+
+      </div>
     </section>
   </main>
 </body>
