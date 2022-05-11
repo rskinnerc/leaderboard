@@ -891,6 +891,16 @@ select {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
+.hover\:shadow-rose-200\/50:hover {
+  --tw-shadow-color: rgb(254 205 211 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-rose-200\/30:hover {
+  --tw-shadow-color: rgb(254 205 211 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .focus\:border-2:focus {
   border-width: 2px;
 }
